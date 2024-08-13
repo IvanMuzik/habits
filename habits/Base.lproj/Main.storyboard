@@ -36,6 +36,10 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9yD-oK-M7P"/>
+                                    <segue destination="7CP-c0-vlU" kind="show" id="Sk7-c0-vb3"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="21 день нужен для устаканивания привычки" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ogs-P3-y0s">
                                 <rect key="frame" x="83" y="338" width="249" height="110"/>
@@ -62,15 +66,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
+                    <connections>
+                        <outlet property="fourTV" destination="O2r-jT-Tef" id="ts4-j6-LCv"/>
+                        <outlet property="nextButton" destination="GVb-ye-YlT" id="fQ0-kE-n6b"/>
+                        <outlet property="oneTV" destination="gRm-5g-tte" id="mLe-Af-Qjp"/>
+                        <outlet property="threeTV" destination="wQT-LY-7rV" id="qPD-oe-MWd"/>
+                        <outlet property="titleLabel" destination="zix-1h-rkM" id="YHE-Wn-k6N"/>
+                        <outlet property="twoTV" destination="ogs-P3-y0s" id="9QO-dM-7cz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244.92753623188409" y="66.294642857142861"/>
         </scene>
-        <!--View Controller-->
+        <!--VC2-->
         <scene sceneID="YqE-bf-OTP">
             <objects>
-                <viewController id="7CP-c0-vlU" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7CP-c0-vlU" customClass="VC2" customModule="habits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PVl-ZY-CeF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,15 +150,16 @@
                         <viewLayoutGuide key="safeArea" id="r0u-1c-NHu"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="o0z-sG-gSN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZQ-Po-bJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1014.4927536231885" y="66.294642857142861"/>
         </scene>
-        <!--View Controller-->
+        <!--VC3-->
         <scene sceneID="atL-EP-Yvv">
             <objects>
-                <viewController id="xym-ab-Hzd" sceneMemberID="viewController">
+                <viewController id="xym-ab-Hzd" customClass="VC3" customModule="habits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e6L-cp-2Wd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="1779.7101449275365" y="65.625"/>
         </scene>
-        <!--View Controller-->
+        <!--VC4-->
         <scene sceneID="6da-oj-Usj">
             <objects>
-                <viewController id="TMv-KG-Yms" sceneMemberID="viewController">
+                <viewController id="TMv-KG-Yms" customClass="VC4" customModule="habits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dxv-gC-ocZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
