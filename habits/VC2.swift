@@ -16,22 +16,24 @@ class VC2: UIViewController {
     var nameHabitTF = UITextField()
     var timeLapsTF = UITextField()
     let timerSwitch = UISwitch()
-    let items = ["Муж.", "Жен."]
+    let itemsArray = ["Муж.", "Жен."]
     var characterSexSC = UISegmentedControl()
     let vcTwoButton = UIButton()
-    
-    
-    // добавить фото муж и жен но это потом когда сгенерирую персонаей
-    
-    // добавить кнопку и сделать переход
+    let characterImage = UIImageView()
+    let imageArray = ["man", "girl"]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     // как в отдельный файл вынести описания лейбла?
-        
-        // описать кнопку
+        // добавить фото муж и жен но это потом когда сгенерирую персонаей
+        // добавить кнопку и сделать переход
         // дать констрейнты
+        
+        characterImage.frame = CGRect(x: 150, y: 500, width: 200, height: 200)
+        
+        self.view.addSubview(characterImage)
         
         vcTwoButton.frame = CGRect(x: 120, y: 720, width: 200, height: 60)
         vcTwoButton.setTitle("Next", for: .normal)
@@ -48,7 +50,7 @@ class VC2: UIViewController {
         
         self.view.addSubview(timerSwitch)
         
-        characterSexSC = UISegmentedControl(items: items)
+        characterSexSC = UISegmentedControl(items: itemsArray)
         characterSexSC.frame = CGRect(x: 70, y: 380, width: 100, height: 30)
         characterSexSC.selectedSegmentIndex = 0
         characterSexSC.selectedSegmentTintColor = .white
