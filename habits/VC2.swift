@@ -15,24 +15,45 @@ class VC2: UIViewController {
     let timerLabel = UILabel()
     var nameHabitTF = UITextField()
     var timeLapsTF = UITextField()
+    let timerSwitch = UISwitch()
+    let items = ["Муж.", "Жен."]
+    var characterSexSC = UISegmentedControl()
+    let vcTwoButton = UIButton()
     
-    let item = ["Муж.", "Жен."]
-    let characterSexSC = UISegmentedControl()
     
+    // добавить фото муж и жен но это потом когда сгенерирую персонаей
     
-    
-    //добавить сигмент контрол
-    // добавить свитч
     // добавить кнопку и сделать переход
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     // как в отдельный файл вынести описания лейбла?
-        //описать сигмент контрол
-        //описать свитч
+        
         // описать кнопку
         // дать констрейнты
+        
+        vcTwoButton.frame = CGRect(x: 120, y: 720, width: 200, height: 60)
+        vcTwoButton.setTitle("Next", for: .normal)
+        vcTwoButton.tintColor = .white
+        vcTwoButton.backgroundColor = .gray
+        vcTwoButton.layer.cornerRadius = 10
+        
+        self.view.addSubview(vcTwoButton)
+
+        
+        
+        timerSwitch.frame = CGRect(x: 70, y: 500, width: 50, height: 30)
+        timerSwitch.isOn = true
+        
+        self.view.addSubview(timerSwitch)
+        
+        characterSexSC = UISegmentedControl(items: items)
+        characterSexSC.frame = CGRect(x: 70, y: 380, width: 100, height: 30)
+        characterSexSC.selectedSegmentIndex = 0
+        characterSexSC.selectedSegmentTintColor = .white
+        
+        view.addSubview(characterSexSC)
         
         nameHabitLabel.text = "Название привычки"
         nameHabitLabel.textColor = .black
