@@ -18,7 +18,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        // нужно создать массив или что то откуда будут рандомно браься фразы
+        
     }
     @IBAction func nextButtonAction(_ sender: UIButton) {
         

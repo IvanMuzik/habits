@@ -20,19 +20,21 @@ class VC2: UIViewController {
     var characterSexSC = UISegmentedControl()
     let vcTwoButton = UIButton()
     let characterImage = UIImageView()
-    let imageArray = ["man", "girl"]
+    let imageArray = [UIImage(named: "man"), UIImage(named:"girl")]
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    // как в отдельный файл вынести описания лейбла?
+        //добавить может заголовок экрана "Новая привычка"
+        // как в отдельный файл вынести описания лейбла?
         // добавить фото муж и жен но это потом когда сгенерирую персонаей
         // добавить кнопку и сделать переход
-        // дать констрейнты
+        //создать пикер или таймер при вкл появляется пикер и наоборот
         
-        characterImage.frame = CGRect(x: 150, y: 500, width: 200, height: 200)
         
+        characterImage.frame = CGRect(x: 230, y: 300, width: 150, height: 150)
+        characterImage.image = imageArray[0]
         self.view.addSubview(characterImage)
         
         vcTwoButton.frame = CGRect(x: 120, y: 720, width: 200, height: 60)
@@ -54,6 +56,8 @@ class VC2: UIViewController {
         characterSexSC.frame = CGRect(x: 70, y: 380, width: 100, height: 30)
         characterSexSC.selectedSegmentIndex = 0
         characterSexSC.selectedSegmentTintColor = .white
+        characterSexSC.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
+
         
         view.addSubview(characterSexSC)
         
@@ -112,7 +116,12 @@ class VC2: UIViewController {
         
     }
     
-
-  
+    @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0{
+            characterImage.image = imageArray[0]
+        } else {
+            characterImage.image = imageArray[1]
+            }
+        }
 
 }
