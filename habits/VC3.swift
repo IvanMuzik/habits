@@ -9,21 +9,21 @@ import UIKit
 
 class VC3: UIViewController {
 
+    var numDayLabel = UILabel(frame: CGRect(x: 200, y: 50, width: 200, height: 30))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        numDayLabel.textColor = .black
+        numDayLabel.text = "0/21"
+        numDayLabel.textAlignment = .center
+        numDayLabel.font = .systemFont(ofSize: 20)
+        
+        self.view.addSubview(numDayLabel)
+
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }

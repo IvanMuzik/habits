@@ -10,17 +10,17 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var oneTV: UITextView!
-    @IBOutlet weak var twoTV: UITextView!
-    @IBOutlet weak var threeTV: UITextView!
-    @IBOutlet weak var fourTV: UITextView!
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var phrasesLabel: UILabel!
+    @IBOutlet weak var newHabitButton: UIButton!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // нужно создать массив или что то откуда будут рандомно браься фразы
+        let randomPhraseProvider = RandomPhraseProvider()
+        phrasesLabel.text = randomPhraseProvider.getRandomPhrase()
         
     }
     @IBAction func nextButtonAction(_ sender: UIButton) {
