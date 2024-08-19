@@ -21,7 +21,7 @@ class VC2: UIViewController {
     let vcTwoButton = UIButton()
     let characterImage = UIImageView()
     let imageArray = [UIImage(named: "man"), UIImage(named:"girl")]
-
+    var image = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,6 @@ class VC2: UIViewController {
         //добавить может заголовок экрана "Новая привычка"
         // как в отдельный файл вынести описания лейбла?
         // сгенерировать персонажей
-        
         // добавить кнопку и сделать переход
         //создать пикер или таймер при вкл свича появляется пикер и наоборот
         // добавить функционал свитча
@@ -118,12 +117,16 @@ class VC2: UIViewController {
         
     }
     
+    
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
             characterImage.image = imageArray[0]
+            
         } else {
             characterImage.image = imageArray[1]
+            
             }
         }
 
+    
 }

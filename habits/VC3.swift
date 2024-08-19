@@ -9,11 +9,14 @@ import UIKit
 
 class VC3: UIViewController {
 
-    var numDayLabel = UILabel(frame: CGRect(x: 200, y: 50, width: 200, height: 30))
+    var numDayLabel = UILabel()
+    var personImage = UIImageView()
+    var vc2 = VC2()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        numDayLabel.frame = CGRect(x: 270, y: 65, width: 120, height: 50)
         numDayLabel.textColor = .black
         numDayLabel.text = "0/21"
         numDayLabel.textAlignment = .center
@@ -21,6 +24,10 @@ class VC3: UIViewController {
         
         self.view.addSubview(numDayLabel)
 
+        personImage.frame = CGRect(x: 35, y: 65, width: 210, height: 280)
+        personImage.image = vc2.image
+        
+        self.view.addSubview(personImage)
         
     }
     
