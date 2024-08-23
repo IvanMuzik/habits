@@ -21,7 +21,8 @@ class VC2: UIViewController {
     let vcTwoButton = UIButton()
     let characterImage = UIImageView()
     let imageArray = [UIImage(named: "man"), UIImage(named:"girl")]
-    var image = UIImage()
+    var selectedImage: UIImage?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +47,6 @@ class VC2: UIViewController {
         
         self.view.addSubview(vcTwoButton)
 
-        
-        
         timerSwitch.frame = CGRect(x: 70, y: 500, width: 50, height: 30)
         timerSwitch.isOn = true
         
@@ -59,7 +58,6 @@ class VC2: UIViewController {
         characterSexSC.selectedSegmentTintColor = .white
         characterSexSC.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
 
-        
         view.addSubview(characterSexSC)
         
         nameHabitLabel.text = "Название привычки"
@@ -114,19 +112,17 @@ class VC2: UIViewController {
         
         self.view.addSubview(timeLapsTF)
         
-        
     }
-    
     
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
-            characterImage.image = imageArray[0]
+            selectedImage = imageArray[0]
             
         } else {
-            characterImage.image = imageArray[1]
+            selectedImage = imageArray[1]
             
-            }
         }
+        characterImage.image = selectedImage
+    }
 
-    
 }
