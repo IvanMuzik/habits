@@ -44,6 +44,8 @@ class VC2: UIViewController {
         vcTwoButton.tintColor = .white
         vcTwoButton.backgroundColor = .gray
         vcTwoButton.layer.cornerRadius = 10
+        vcTwoButton.addTarget(self, action: #selector(goToSecondScreen), for: .touchUpInside)
+
         
         self.view.addSubview(vcTwoButton)
 
@@ -111,6 +113,11 @@ class VC2: UIViewController {
         timeLapsTF.backgroundColor = .white
         
         self.view.addSubview(timeLapsTF)
+        
+    }
+    
+    @objc func goToSecondScreen() {
+
         
     }
     
