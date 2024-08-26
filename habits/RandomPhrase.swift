@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class RandomPhraseProvider{
+class RandomPhrase{
     
     // добавить массив еще цитат на 3 экран 
     

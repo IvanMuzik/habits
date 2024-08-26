@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let randomPhraseProvider = RandomPhraseProvider()
-        phrasesLabel.text = randomPhraseProvider.getRandomPhrase()
+        let randomPhrase = RandomPhrase()
+        phrasesLabel.text = randomPhrase.getRandomPhrase()
     }
     @IBAction func nextButtonAction(_ sender: UIButton) {
         

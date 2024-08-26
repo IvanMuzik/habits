@@ -26,11 +26,11 @@ class VC2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // сделать таймер
         //добавить может заголовок экрана "Новая привычка"
         // как в отдельный файл вынести описания лейбла?
         // сгенерировать персонажей
-        // добавить кнопку и сделать переход
         //создать пикер или таймер при вкл свича появляется пикер и наоборот
         // добавить функционал свитча
         
@@ -118,7 +118,11 @@ class VC2: UIViewController {
     
     @objc func goToSecondScreen() {
 
+        let vc3 = VC3()
+        let navigationController = UINavigationController(rootViewController: vc3)
         
+        present(navigationController, animated: true)
+
     }
     
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
