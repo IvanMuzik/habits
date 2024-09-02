@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E401404C2C70A72100B2A7CC /* RandomPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E401404B2C70A72100B2A7CC /* RandomPhrase.swift */; };
+		E45388582C7F0EFC004ABB3B /* VC5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45388572C7F0EFC004ABB3B /* VC5.swift */; };
 		E49133BB2C6206F20030EE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49133BA2C6206F20030EE04 /* AppDelegate.swift */; };
 		E49133BD2C6206F20030EE04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49133BC2C6206F20030EE04 /* SceneDelegate.swift */; };
 		E49133BF2C6206F20030EE04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49133BE2C6206F20030EE04 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		E401404B2C70A72100B2A7CC /* RandomPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhrase.swift; sourceTree = "<group>"; };
+		E45388572C7F0EFC004ABB3B /* VC5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC5.swift; sourceTree = "<group>"; };
 		E49133B72C6206F20030EE04 /* habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49133BA2C6206F20030EE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E49133BC2C6206F20030EE04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		E49133AE2C6206F20030EE04 = {
 			isa = PBXGroup;
 			children = (
+				E45388572C7F0EFC004ABB3B /* VC5.swift */,
 				E49133B92C6206F20030EE04 /* habits */,
 				E49133B82C6206F20030EE04 /* Products */,
 			);
@@ -160,6 +163,7 @@
 			files = (
 				E49133BF2C6206F20030EE04 /* ViewController.swift in Sources */,
 				E401404C2C70A72100B2A7CC /* RandomPhrase.swift in Sources */,
+				E45388582C7F0EFC004ABB3B /* VC5.swift in Sources */,
 				E49133BB2C6206F20030EE04 /* AppDelegate.swift in Sources */,
 				E4ECD8882C6B70FC0098669E /* VC3.swift in Sources */,
 				E4ECD88A2C6B71160098669E /* VC4.swift in Sources */,
